@@ -14,7 +14,7 @@
 # 
 # NOTE: If the user accepts the deletion of the files, the function deletes them irreversibly 
 # using `unlink()`. Therefore, our familiar adage truly applies: this function comes with 
-# ABSOLUTELY NO WARRANTY.
+# ABSOLUTELY NO WARRANTY. Please ensure you understand the source code before using the function.
 
 
 knit_deleting_service_files =
