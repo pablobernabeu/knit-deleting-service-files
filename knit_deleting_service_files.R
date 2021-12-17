@@ -13,8 +13,11 @@
 # a path to the directory containing the file.
 # 
 # NOTE: If the user accepts the deletion of the files, the function deletes them irreversibly 
-# using `unlink()`. Therefore, our familiar adage truly applies: this function comes with 
-# ABSOLUTELY NO WARRANTY. Please ensure you understand the source code before using the function.
+# using `unlink()` (https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlink.html). 
+# Therefore, our familiar adage truly applies: this function comes with ABSOLUTELY NO WARRANTY. 
+# Please ensure you understand the source code
+# (https://github.com/pablobernabeu/knit-deleting-service-files/blob/main/knit_deleting_service_files.R) 
+# before using the function.
 
 
 knit_deleting_service_files =
