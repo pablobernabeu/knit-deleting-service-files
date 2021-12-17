@@ -4,18 +4,24 @@
 # service files and folders (e.g., `.tex`, `doc_files`) before and after knitting an Rmd/md document.
 
 # Longer description
-# This function is designed to avoid errors when knitting (i.e., rendering) Markdown or R Markdown 
-# documents that are due to service files remaining from previous knittings (e.g., manuscript.tex, 
-# ZHJhZnQtYXBhLlJtZA==.Rmd, manuscript.synctex.gz). The function first suggests deleting potential 
-# service files in the directory. A response from the user is required in the console. Next, the 
-# document is knitted. Last, the function offers deleting potential service files again, with a 
-# response being required again. The only obligatory argument of this function is the name of an 
-# (R)md file. The optional argument is a path to the directory in which the file is located. 
+# This function is designed to avoid (R) Markdown knitting errors caused by service files from 
+# previous knittings (e.g., manuscript.tex, ZHJhZnQtYXBhLlJtZA==.Rmd, manuscript.synctex.gz). 
+# The function first suggests deleting potential service files in the directory. A response from 
+# the user is required in the console. Next, the document is knitted. Last, the function offers 
+# deleting potential service files again, with a response being required as well. The only 
+# obligatory argument for this function is the name of an (R)md file. The optional argument is 
+# a path to the directory containing the file.
+# 
+# NOTE: If the user accepts the deletion of the files, the function deletes them irreversibly 
+# using `unlink()`. Therefore, our familiar adage truly applies: this function comes with 
+# ABSOLUTELY NO WARRANTY.
 
 
 knit_deleting_service_files =
   
   function(file_name_with_extension, path = NULL) {
+    
+    require(rmarkdown)
     
     # Input validity: check if file_name_with_extension provided by user has the extension 
     # '.md' or 'Rmd' and exists in the directory. If it does not, stop function with error.
