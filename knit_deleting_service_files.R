@@ -10,7 +10,7 @@
 # the user is required in the console. Next, the document is knitted. Last, the function offers 
 # deleting potential service files again, with a response being required as well. The only 
 # obligatory argument for this function is the name of an (R)md file. The optional argument is 
-# a path to the directory containing the file.
+# a path to a directory containing the file.
 # 
 # NOTE: If the user accepts the deletion of the files, the function deletes them irreversibly 
 # using `unlink()` (https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlink.html). 
