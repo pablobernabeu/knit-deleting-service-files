@@ -1,6 +1,6 @@
 # `knit-deleting-service-files()`
 
-Function for knitting (R) Markdown documents while circumventing common errors. The function deletes service files and folders (e.g., `.tex`, `doc_files`) before and after knitting an Rmd/md document.
+Function for knitting (R) Markdown documents while circumventing common errors. The function suggests deleting potential service files and folders (e.g., `.tex`, `doc_files`) before and after knitting an (R)md document.
 
 ### Longer description
 
