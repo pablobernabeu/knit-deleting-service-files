@@ -6,7 +6,7 @@ Function for knitting (R) Markdown documents while circumventing common errors. 
 
 This function is designed to avoid (R) Markdown knitting errors caused by service files from previous knittings (e.g., manuscript.tex, ZHJhZnQtYXBhLlJtZA==.Rmd, manuscript.synctex.gz). The function first suggests deleting potential service files in the directory. A response from the user is required in the console. Next, the document is knitted. Last, the function offers deleting potential service files again, with a response being required as well. The only obligatory argument for this function is the name of an (R)md file. The optional argument is a path to the directory containing the file.
 
-NOTE: If the user accepts the deletion of the files, the function deletes them irreversibly using `unlink()`. Therefore, our familiar adage truly applies: this function comes with ABSOLUTELY NO WARRANTY.
+NOTE: If the user accepts the deletion of the files, the function deletes them irreversibly using `unlink()`. Therefore, our familiar adage truly applies: this function comes with ABSOLUTELY NO WARRANTY. Please ensure you understand the source code before using the function.
 
 <br>
 
