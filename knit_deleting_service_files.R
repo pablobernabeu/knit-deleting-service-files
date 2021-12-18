@@ -51,7 +51,7 @@ knit_deleting_service_files =
         
         # If no path provided by user, use default (current) directory
         if(is.null(path)) {
-          list.files(path = 'manuscript',
+          list.files(
                      # any files or folders with any of the four endings below
                      pattern = paste0('^.*(\\.tex|\\.log|\\.synctex.gz|\\=.Rmd|',  # regex continues below
                                       # or named exactly [name]_files. Below, to define [name]_files,
