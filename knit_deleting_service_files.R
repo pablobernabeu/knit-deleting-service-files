@@ -1,12 +1,12 @@
 
 
-# Function for knitting (R) Markdown documents while circumventing common errors. The function deletes 
-# service files and folders (e.g., `.tex`, `doc_files`) before and after knitting an Rmd/md document.
+# Function for knitting (R) Markdown documents while circumventing common errors. The function offers
+# deleting potential service files and folders before and after knitting an Rmd/md document.
 
 # Longer description
 # This function helps avoid (R) Markdown knitting errors caused by files and folders remaining from 
 # previous knittings. (e.g., manuscript.tex, ZHJhZnQtYXBhLlJtZA==.Rmd, manuscript.synctex.gz). The 
-# function first suggests deleting potential service files in the directory. A response from the 
+# function first offers deleting potential service files in the directory. A response from the 
 # user is required in the console. Next, the document is knitted. Last, the function offers 
 # deleting potential service files again, with a response being required as well. The only 
 # obligatory argument for this function is the name of an (R)md file. The optional argument is a 
