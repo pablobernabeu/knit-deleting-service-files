@@ -1,12 +1,12 @@
-# `knit-deleting-service-files()`
+# `knit_deleting_service_files()`
 
 Function for knitting (R) Markdown documents while circumventing common errors. The function suggests deleting potential service files and folders (e.g., `.tex`, `doc_files`) before and after knitting an (R)md document.
 
 ### Longer description
 
-This function is designed to avoid (R) Markdown knitting errors caused by service files from previous knittings (e.g., manuscript.tex, ZHJhZnQtYXBhLlJtZA==.Rmd, manuscript.synctex.gz). The function first suggests deleting potential service files in the directory. A response from the user is required in the console. Next, the document is knitted. Last, the function offers deleting potential service files again, with a response being required as well. The only obligatory argument for this function is the name of an (R)md file. The optional argument is a path to a directory containing the file.
+This function is designed to avoid (R) Markdown knitting errors due to service files and folders that were created on previous knittings (e.g., manuscript.tex, ZHJhZnQtYXBhLlJtZA==.Rmd, manuscript.synctex.gz). The function first suggests deleting potential service files in the directory. A response from the user is required in the console. Next, the document is knitted. Last, the function offers deleting potential service files again, with a response being required as well. The only obligatory argument for this function is the name of an (R)md file. The optional argument is a path to a directory containing the file.
 
-NOTE: If the user accepts the deletion of the files, the function deletes them irreversibly using [`unlink()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlink.html). Therefore, our familiar adage truly applies: this function comes with ABSOLUTELY NO WARRANTY. Please ensure you understand the [source code](https://github.com/pablobernabeu/knit-deleting-service-files/blob/main/knit_deleting_service_files.R) before using the function.
+NOTE: If the user accepts the deletion of the files, the function deletes them irreversibly using [`unlink()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlink.html). Therefore, our familiar adage truly applies: this function comes with ABSOLUTELY NO WARRANTY. Please ensure you understand the [source code](https://github.com/pablobernabeu/knit_deleting_service_files/blob/main/knit_deleting_service_files.R) before using the function.
 
 <br>
 
