@@ -9,7 +9,7 @@
 # manuscript.synctex.gz). The only obligatory argument for this function is the name of a .Rmd or .md file. 
 # The optional argument is a path to a directory containing this file.
 #
-# The function first offers deleting potential service files and folders in the directory. Approval is 
+# The function first offers deleting potential service files and folders, for which the user's approval is 
 # requested in the console. Next, the document is knitted. Last, the function offers deleting potential 
 # service files and folders again.
 # 
