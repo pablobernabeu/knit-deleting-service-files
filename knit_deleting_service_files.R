@@ -13,9 +13,9 @@
 # path to a directory containing the file.
 # 
 # NOTE: The deletion, if accepted, is irreversible as it is made through `unlink()`
-# (https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlink.html).
-# Therefore, our familiar adage truly applies: this function comes with ABSOLUTELY NO WARRANTY. 
-# Please ensure you understand the source code
+# (https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlink.html). Therefore, our familiar 
+# adage truly applies: this function comes with ABSOLUTELY NO WARRANTY. Please ensure you 
+# understand the source code 
 # (https://github.com/pablobernabeu/knit-deleting-service-files/blob/main/knit_deleting_service_files.R) 
 # before using the function.
 
