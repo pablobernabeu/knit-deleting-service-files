@@ -45,8 +45,8 @@ knit_deleting_service_files =
       }}
     
     # Create function to find potential service files and folders in the current directory, 
-    # or in the path provided, whose names end in '.tex', '.log', '.synctex.gz', 
-    # '.*\\=.Rmd', or whose name matches '[name]_files'.
+    # or in the path provided, whose names end in '.tex', '.log', '.synctex.gz', '=.Rmd', 
+    # or whose name matches '[name]_files'.
     find_service_files_folders = 
       function() {
         
