@@ -1,18 +1,19 @@
 
 
-# Function for knitting (R) Markdown documents while circumventing common errors. The function offers
-# deleting potential service files and folders before and after knitting an Rmd/md document.
+# Function for knitting (R) Markdown documents while circumventing common errors. The function offers deleting
+# potential service files and folders before and after knitting an Rmd/md document.
 
 # Longer description
-# This function helps avoid (R) Markdown knitting errors caused by files and folders remaining from 
-# previous knittings. (e.g., manuscript.tex, ZHJhZnQtYXBhLlJtZA==.Rmd, manuscript.synctex.gz). The 
-# function first offers deleting potential service files in the directory. A response from the 
-# user is required in the console. Next, the document is knitted. Last, the function offers 
-# deleting potential service files again, with a response being required as well. The only 
-# obligatory argument for this function is the name of an (R)md file. The optional argument is a 
-# path to a directory containing the file.
+# The function knit_deleting_service_files() helps avoid (R) Markdown knitting errors caused by files and 
+# folders remaining from previous knittings (e.g., manuscript.tex, ZHJhZnQtYXBhLlJtZA==.Rmd, 
+# manuscript.synctex.gz). The only obligatory argument for this function is the name of a .Rmd or .md file. 
+# The optional argument is a path to a directory containing this file.
+#
+# The function first offers deleting potential service files and folders in the directory. A confirmation 
+# is required in the console. Next, the document is knitted. Last, the function offers deleting potential 
+# service files and folders again.
 # 
-# NOTE: The deletion, if accepted, is irreversible as it is made through `unlink()`
+# NOTE: The deletions, if accepted, are irreversible as they are made through `unlink()`
 # (https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlink.html). Therefore, our familiar 
 # adage truly applies: this function comes with ABSOLUTELY NO WARRANTY. Please ensure you 
 # understand the source code 
