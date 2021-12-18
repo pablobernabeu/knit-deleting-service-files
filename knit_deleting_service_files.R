@@ -53,14 +53,14 @@ knit_deleting_service_files =
         # If no path provided by user, use default (current) directory
         if(is.null(path)) {
           list.files(
-                     # any files or folders with any of the four endings below
-                     pattern = paste0('^.*(\\.tex|\\.log|\\.synctex.gz|\\=.Rmd|',  # regex continues below
-                                      # or named exactly [name]_files. Below, to define [name]_files,
-                                      # the extensions .md or .Rmd are removed from 
-                                      # `file_name_with_extension`. Let the result be `[name]`. Any 
-                                      # files or folders called '[name]_files' will be stored, along
-                                      # with the other files specified right above. 
-                                      paste0(sub('*\\.(Rmd|md)', '', file_name_with_extension), '_files)$'))
+            # any files or folders with any of the four endings below
+            pattern = paste0('^.*(\\.tex|\\.log|\\.synctex.gz|\\=.Rmd|',  # regex continues below
+                             # or named exactly [name]_files. Below, to define [name]_files,
+                             # the extensions .md or .Rmd are removed from 
+                             # `file_name_with_extension`. Let the result be `[name]`. Any 
+                             # files or folders called '[name]_files' will be stored, along
+                             # with the other files specified right above. 
+                             paste0(sub('*\\.(Rmd|md)', '', file_name_with_extension), '_files)$'))
           )
           
           # else, specify path in list.files()
