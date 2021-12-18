@@ -44,7 +44,7 @@ knit_deleting_service_files =
         stop('File not found.')
       }}
     
-    # Create function to find any service files and folders in the current directory, 
+    # Create function to find potential service files and folders in the current directory, 
     # or in the path provided, whose names end in '.tex', '.log', '.synctex.gz', 
     # '.*\\=.Rmd', or whose name matches '[name]_files'.
     find_service_files_folders = 
