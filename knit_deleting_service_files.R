@@ -16,9 +16,8 @@
 # NOTE: The deletions, if accepted, are irreversible as they are made through `unlink()`
 # (https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlink.html). Therefore, our familiar 
 # adage truly applies: this function comes with ABSOLUTELY NO WARRANTY. Please ensure you 
-# understand the source code 
-# (https://github.com/pablobernabeu/knit-deleting-service-files/blob/main/knit_deleting_service_files.R) 
-# before using the function.
+# understand the source code before using the function
+# (https://github.com/pablobernabeu/knit-deleting-service-files/blob/main/knit_deleting_service_files.R).
 
 
 knit_deleting_service_files =
@@ -44,9 +43,8 @@ knit_deleting_service_files =
         stop('File not found.')
       }}
     
-    # Create function to find potential service files and folders in the current directory, 
-    # or in the path provided, whose names end in '.tex', '.log', '.synctex.gz', '=.Rmd', 
-    # or whose name matches '[name]_files'.
+    # Create function to find potential service files 
+    # and folders in the appropriate directory.
     find_service_files_folders = 
       function() {
         
@@ -54,7 +52,7 @@ knit_deleting_service_files =
         if(is.null(path)) {
           list.files(
             # any files or folders with any of the four endings below
-            pattern = paste0('^.*(\\.tex|\\.log|\\.synctex.gz|\\=.Rmd|',  # regex continues below
+            pattern = paste0('^.*(\\.tex|\\.log|\\.synctex.gz|\\.out|\\.aux|\\=.Rmd|',
                              # or named exactly [name]_files. Below, to define [name]_files,
                              # the extensions .md or .Rmd are removed from 
                              # `file_name_with_extension`. Let the result be `[name]`. Any 
@@ -67,7 +65,7 @@ knit_deleting_service_files =
         } else {
           list.files( path = path,
                       # any files or folders with any of the four endings below
-                      pattern = paste0('^.*(\\.tex|\\.log|\\.synctex.gz|\\=.Rmd|',  # regex continues below
+                      pattern = paste0('^.*(\\.tex|\\.log|\\.synctex.gz|\\.out|\\.aux|\\=.Rmd|',
                                        # or named exactly [name]_files. Below, to define [name]_files,
                                        # the extensions .md or .Rmd are removed from 
                                        # `file_name_with_extension`. Let the result be `[name]`. Any 
