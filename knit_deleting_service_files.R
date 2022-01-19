@@ -97,8 +97,8 @@ knit_deleting_service_files =
                  # Remark on the directory
                  if(!is.null(path)) paste0(" (enclosing directory shown before slash)\n"), 
                  paste0('\n  - ', initial_service_files_folders, collapse = ''), 
-                 "\n\n To delete these files or folders irreversibly, press 'y' and Enter.\n",
-                 " Press any other letter and Enter to continue without deleting.\n\n")
+                 "\n\n To delete these files or folders irreversibly, press 'y' and then Return.\n",
+                 " Press any other letter and then Return to continue without deleting.\n\n")
         ))
       
       # 3. If approved, DELETE service files and folders
